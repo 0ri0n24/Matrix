@@ -16,6 +16,8 @@ public class Main {
         System.out.println(" 1. Addition" +
                 "\n 2. Subtraction " +
                 "\n 3. Multiplication" +
+                "\n 4. scalerMultiplication" +
+                "\n 5. Determinants" +
                 "");
         Switch();
     }
@@ -36,11 +38,14 @@ public class Main {
             case 4:{
                 scalerMultiplication();
             }
+            case 5:{
+                determinants();
+            }
         }
 
     }
 
-    private void parameters() {
+    private int[][] parameters() {
         int row, col;
         System.out.println("enter the numbers of rows and columns in the matrix");
         row = in.nextInt();
@@ -52,16 +57,22 @@ public class Main {
                 mat[i][j] = in.nextInt();
             }
         }
+        return mat;
     }
 
     private void addition() {
         System.out.println("enter values in first matrix");
-        parameters();
+      int z[][]=  parameters();
         System.out.println("enter values in second matrix");
-        parameters();
+       int y[][]= parameters();
+       for(int i=0; i<z.length;i++)
+           for(int j=0 ;j< y.length;j++) {
+
+           }}
     }
     private void subtraction(){}
     private  void multiplication (){}
     private void scalerMultiplication(){}
+    private void determinants(){}
 }
 
