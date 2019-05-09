@@ -45,37 +45,18 @@ public class Main {
 
     }
 
-    private int[][] parameters() {
-        int row, col;
-        System.out.println("enter the numbers of rows and columns in the matrix");
-        row = in.nextInt();
-        col = in.nextInt();
-        int[][] mat = new int[row][col];
-        System.out.println("enter values:");
+    private void parameters() {
+        System.out.println("enter the number of rows and column:");
+        int row = in.nextInt(), col = in.nextInt();
         for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                mat[i][j] = in.nextInt();
-            }
+            for(int j=0; j<col; j++){
+                int[][] accept = new int [i][j];
+                accept[i][j] = in.nextInt();}
         }
-        return mat;
     }
-
     private void addition() {
-        System.out.println("enter values in first matrix");
-        int z[][] = parameters();
-        System.out.println("enter values in second matrix");
-        int y[][] = parameters();
-        for (int i = 0; i < z.length; i++) {
-            for (int j = 0; j < i; j++) {
-                System.out.println(z[i][j]);
-            }
-        }
-        System.err.println("hello new array");
-        for (int i = 0; i < y.length; i++) {
-            for (int j = 0; j < i; j++) {
-                System.out.println(y[i][j]);
-            }
-        }
+    Main get = new Main();
+    get.parameters();
     }
 
     private void subtraction(){}
