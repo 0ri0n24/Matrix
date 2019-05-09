@@ -62,14 +62,22 @@ public class Main {
 
     private void addition() {
         System.out.println("enter values in first matrix");
-      int z[][]=  parameters();
+        int z[][] = parameters();
         System.out.println("enter values in second matrix");
-       int y[][]= parameters();
-       for(int i=0; i<z.length;i++)
-           for(int j=0 ;j< y.length;j++) {
-
-           }}
+        int y[][] = parameters();
+        for (int i = 0; i < z.length; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.println(z[i][j]);
+            }
+        }
+        System.err.println("hello new array");
+        for (int i = 0; i < y.length; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.println(y[i][j]);
+            }
+        }
     }
+
     private void subtraction(){}
     private  void multiplication (){}
     private void scalerMultiplication(){}
