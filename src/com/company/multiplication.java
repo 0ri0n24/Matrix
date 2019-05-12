@@ -1,16 +1,15 @@
 package com.company;
 import java.util.Scanner;
-public class addition {
-    void add(){
+public class multiplication {
+    void multi(){
         Scanner in = new Scanner(System.in);
-
         int m,n;
         System.out.println("enter the number of rows and column of matrix");
         m =in.nextInt();
         n=in.nextInt();
         int [][] first = new int[m][n];
         int [][] second = new int[m][n];
-        int [][]sum = new int[m][n];
+        int [][]sub = new int[m][n];
 
         System.out.println("enter the elements of first matrix");
         for(int c = 0;c<m;c++){
@@ -24,17 +23,21 @@ public class addition {
                 second[c][d]= in.nextInt();
             }
         }
-        for(int c = 0;c<m;c++){
-            for(int d=0;d<n;d++){
-                sum[c][d]= first[c][d] + second[c][d];
+        for(int c = 0; c < m; c++) {
+            for (int d = 0; d < n; d++) {
+                sub[c][d] = first[c][d] * second[c][d];
             }
-        }
-        System.out.println("the sum of the two matrix is");
-        for(int c = 0;c<m;c++){
-            for(int d=0;d<n;d++){
-                System.out.print(sum[c][d]+ "\t");
-            }
-            System.out.println();
         }
 
-}}
+        System.out.println("subtraction of the two gives :");
+        for(int c=0;c<m;c++){
+            for(int d=0;d<n;d++){
+                System.out.print(sub[c][d] + "\t");
+            }
+            System.out.println( );}
+
+
+
+
+    }
+}
