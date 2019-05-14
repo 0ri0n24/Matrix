@@ -1,10 +1,12 @@
 package com.company;
 import java.util.Scanner;
 public class transpose {
-    void transpose(){
+    protected int m,n;
+    public void  transpose(){
         Scanner in = new Scanner(System.in);
         System.out.println("enter the rows and column of the matrix:");
-        int m=in.nextInt(),  n=in.nextInt();
+         m=in.nextInt();
+         n=in.nextInt();
 
         int [][]transpose = new int[m][n];
 
@@ -29,6 +31,7 @@ public class transpose {
             }
             System.out.println();
         }
+
 
     }
 }
