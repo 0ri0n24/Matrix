@@ -2,16 +2,16 @@ package com.company;
 import java.util.Scanner;
 
 public class determinants {
-    void deter(){
+    void  deter(){
         Scanner in = new Scanner(System.in);
         System.out.println("enter the number(must be a square matrix) of the rows and column (upto 3*3) :");
 
-       int m=in.nextInt();
+       int  m=in.nextInt();
         int n=in.nextInt();
         if((m>0 && n>0 )&&(m<4 &&n<4)){
         int [][] first = new  int[m][n];
 
-        System.out.println("enter the elements of the first matrix");
+        System.out.println("enter the elements of the  matrix");
 
         for(int c=0;c<m;c++)
             for(int d=0;d<n;d++)
