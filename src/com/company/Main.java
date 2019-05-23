@@ -3,7 +3,7 @@ import com.company.determinants;
 import java.util.Scanner;
 
 public class Main {
-
+static int  m ,n ;
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         char choose;
@@ -55,7 +55,7 @@ public class Main {
             case 6: {
                 System.out.println("you choose determinants");
                 determinants deter = new determinants();
-                deter.deter();
+                deter.deter(m,n);
                 break;
             }
             case 7: {
@@ -80,4 +80,5 @@ public class Main {
        System.out.println("do you want to choose again y or n:");
         choose = in.next().charAt(0);}
     while(choose == 'y');
+
 }}
